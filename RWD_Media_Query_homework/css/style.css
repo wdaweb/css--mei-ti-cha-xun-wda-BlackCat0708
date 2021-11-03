@@ -1,0 +1,224 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.col{
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.main-logo{
+  width:45%
+}
+
+.main-text{
+  width: 75%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  
+}
+
+.txt{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.txt p {
+  margin: 0 0 0 5%;
+}
+
+.col h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.col h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem;
+}
+
+.col p{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.logo{
+  width: 45%;
+}
+
+
+@media(min-width:768px){
+  body{
+    height: 100%;
+  }
+
+  hr{
+    display: none;
+  }
+
+  .col{
+    margin: 0;
+    width: 10%;
+  }
+
+  .main-logo{
+    width: 60%;
+  }
+
+  .logo{
+    width: 90%;
+  }
+
+  .col h1{
+    font-size: 2rem;
+    margin: 0.5rem 0 0.7rem;
+  }
+
+  .text p{
+    display: none;
+  }
+
+  #section01 .col{
+    width: 25%;
+    position: relative;
+    margin: auto;
+    top: 300px;
+  }
+
+  #section02 .col{
+    position: absolute;
+    top: 5%;
+  }
+
+  #section02 .col::before{
+    content: "";
+    width: 280%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    bottom: -10%;
+    left: 90%;
+    transform: rotate(15deg);
+  }
+
+  #section03 .col{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+  }
+
+  #section03 .col::before{
+    content: "";
+    width: 70%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    bottom: 0%;
+    left: 80%;
+    transform: rotate(45deg);
+  }
+
+  #section04 .col{
+    position: absolute;
+    left: 10%;
+  }
+
+  #section04 .col::before{
+    content: "";
+    width: 215%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    top: 25%;
+    left: 100%;
+    transform: rotate(350deg);
+  }
+
+  #section05 .col{
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+  }
+
+  #section05 .col::before{
+    content: "";
+    width: 130%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    top: -20%;
+    left: 70%;
+    transform: rotate(320deg);
+  }
+
+  #section06 .col{
+    position: absolute;
+    top: 0;
+    right: 20%;
+  }
+
+  #section06 .col::before{
+    content: "";
+    width: 140%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    bottom: 0%;
+    right: 100%;
+    transform: rotate(150deg);
+  }
+
+  #section07 .col{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+  }
+
+  #section07 .col::before{
+    content: "";
+    width: 255%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    bottom: 40%;
+    right: 110%;
+    transform: rotate(175deg);
+  }
+
+  #section08 .col{
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+  }
+
+  #section08 .col::before{
+    content: "";
+    width: 180%;
+    height: 3px;
+    background: #ddd;
+    position: absolute;
+    top: -5%;
+    right: 100%;
+    transform: rotate(200deg);
+  }
+}
